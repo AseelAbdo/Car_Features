@@ -3,6 +3,9 @@ package org.example;
 import java.time.LocalDateTime;
 
 public class Appointment {
+    private Installer installer;
+    private Product product;
+    private LocalDateTime scheduledTime;
     private int appointmentId;
     private boolean isCanceled;
 
