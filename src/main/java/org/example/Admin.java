@@ -95,8 +95,8 @@ public   ArrayList getArray(){
 
     public boolean searchCat(String string) {
         boolean flag =false;
-        for(Product product:product){
-            if(product.getCategory().equals(string)){
+        for(Product productName:product){
+            if(productName.getCategory().equals(string)){
                 flag =true;
             }
             else{
