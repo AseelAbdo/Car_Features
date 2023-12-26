@@ -13,7 +13,7 @@ public class Product {
     public String image;
     public boolean IsConfirmed = true;
 
-    public ArrayList<String> Category = new ArrayList();
+    public ArrayList<String> categoryName = new ArrayList();
     public static ArrayList<Product> ListProduct = new ArrayList();
 
     public Product(String name, Integer avail, Integer prices, String product_Descriptions, String image) {
