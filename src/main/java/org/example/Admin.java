@@ -2,10 +2,11 @@ package org.example;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.Scanner;
 import java.util.logging.Logger;
 
 public class Admin {
- public static final Product P = new Product();
+public Product p;
     private  String email;
     private  Integer ID;
 
@@ -16,25 +17,23 @@ public class Admin {
     private ArrayList <Product> product = new ArrayList<>();
     private ArrayList <Customer> customers = new ArrayList<>();
 
-    public List <String> category = new List<>();
+    public ArrayList <String> category = new ArrayList<>();
 
     public  Admin(Integer ID, String name,String email,String pass){
+
         this.name=name;
         this.ID=ID;
         this.email=email;
         this.password=pass;
     }
 
-  public List getCatList(){
+  public ArrayList getCatList(){
         return category;
   }
 
 
 
- // Add accessors if needed
-    public static Product getP() {
-        return P;
-    }
+
 
 public   ArrayList getArray(){
         return product;
@@ -191,12 +190,16 @@ public   ArrayList getArray(){
                 else {
         System.out.println("Wrong type of image");
                 }
+
                 if (product_old.checkPrice(newPrice)) {
                     product_old.setPrice(newPrice);
                 }
                 else {
                     System.out.println("Wrong type of price");
+
                 }
+
+
                 if (product_old.checkAvail(avail)) {
                     product_old.setAvailability(avail);
                 }
@@ -237,5 +240,8 @@ public   ArrayList getArray(){
         }
     }
 }
+
+
+
 
 
