@@ -4,9 +4,6 @@ import java.time.LocalDateTime;
 
 public class Appointment {
     private int appointmentId;
-    private Installer installer;
-    private Product product;
-    private LocalDateTime scheduledTime;
     private boolean isCanceled;
 
     public Integer getID(){
