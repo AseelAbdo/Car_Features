@@ -20,7 +20,7 @@ public Product p;
 
     public  Admin(Integer adminID, String name,String email,String pass){
         this.name=name;
-        this.adminID=ID;
+        this.adminID=adminID;
         this.email=email;
         this.password=pass;
     }
