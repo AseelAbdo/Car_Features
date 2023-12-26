@@ -1,6 +1,7 @@
 package org.example;
 
 import java.util.ArrayList;
+import java.util.logging.Logger;
 
 public class Customer {
     private Integer customerId;
@@ -8,7 +9,6 @@ public class Customer {
     private boolean accountActive = false;
     private String username;
 
-    // private String Address;
 
     private String email;
     private String password;
