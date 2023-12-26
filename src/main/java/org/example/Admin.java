@@ -37,7 +37,7 @@ public   ArrayList getArray(){
         return product;
 }
 
-    public  void set_email(String email2) {
+    public  void setEmail(String email2) {
 
         this.email = email2;
 
