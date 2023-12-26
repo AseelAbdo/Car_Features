@@ -15,19 +15,19 @@ public class Customer {
     public ArrayList<Appointment> app = new ArrayList<>();
     private static final Logger logger = Logger.getLogger(Customer.class.getName());
 
-    public Customer(Integer ID, String username, String emailAddress, String password) {
+    public Customer(Integer customerID, String username, String emailAddress, String password) {
         this.username = username;
         this.email = emailAddress;
         this.password = password;
-        this.customerId = ID;
+        this.customerId = customerID;
         this.accountActive = true;
     }
 
-    public static void displayByCat(ArrayList<Product> List, String cat) {
+    public static void displayByCat(ArrayList<Product> Products, String cat) {
         boolean flag = false;
         ArrayList<Product> temp = new ArrayList<>();
-        for (Product product : List) {
-            if (product.getCategory().equals(cat)) {
+        for (Product product : Products) {
+            if (Products.getCategory().equals(cat)) {
                 temp.add(product);
                 flag = true;
             }
@@ -37,7 +37,7 @@ public class Customer {
         if (!flag) {
             logger.info("No products found in the category: " + cat);
         } else {
-            System.out.println("Products in the category " + cat + ":");
+            logger.info("Products in the category " + cat + ":");
             for (Product product : temp) {
                 logger.info("Product Name: " + product.getName());
                 logger.info("Product Price: " + product.getPrice());
