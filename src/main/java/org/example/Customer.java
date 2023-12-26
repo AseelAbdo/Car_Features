@@ -23,7 +23,7 @@ public class Customer {
         this.accountActive = true;
     }
 
-    public static void displayByCat(ArrayList<Product> Products, String cat) {
+    public static void displayByCat(ArrayList <Product> Products, String cat) {
         boolean flag = false;
         ArrayList<Product> temp = new ArrayList<>();
         for (Product product : Products) {
