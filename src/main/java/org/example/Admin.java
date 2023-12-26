@@ -133,7 +133,7 @@ public   ArrayList getArray(){
         customers.add(customer);
     }
 
-    public  boolean searchID(Integer customer_ID){
+    public  boolean searchID(Integer customerID){
         boolean flag =false;
         for(Customer customerName:customers){
             if(customerName.getID() == customer_ID){
