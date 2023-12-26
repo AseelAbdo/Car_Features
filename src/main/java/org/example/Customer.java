@@ -8,15 +8,12 @@ public class Customer {
 
     private boolean accountActive = false;
     private String username;
-    private static final Logger logger = Logger.getLogger(Customer.class.getName());
-.
-
     private String email;
     private String password;
 
     public ArrayList<Product> products = new ArrayList<>();
     public ArrayList<Appointment> app = new ArrayList<>();
-
+    private static final Logger logger = Logger.getLogger(Customer.class.getName());
 
     public Customer(Integer ID, String username, String emailAddress, String password) {
         this.username = username;
