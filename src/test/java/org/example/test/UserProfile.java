@@ -49,7 +49,7 @@ Customer customer = new Customer(1,"aseel","aseel@gmail.com","12345");
 
      string = customer.getEmail();
      string2="aseel2002@gmail.com";
-     customer.updateEmail(string2);
+     customer.updatEmail(string2);
      if(customer.getEmail().equals(string)){
     System.out.println("Email doesnt updated ");
 
