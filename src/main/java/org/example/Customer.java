@@ -35,9 +35,9 @@ public class Customer {
     }
 
         if (!flag) {
-            logger.info("No products found in the category: " + cat);
+logger.info(String.format("No products found in the category: %s", cat));
         } else {
-            logger.info("Products in the category " + cat + ":");
+logger.info(String.format("Products in the category %s:", cat));
             for (Product product : temp) {
                 logger.info("Product Name: " + product.getName());
                 logger.info("Product Price: " + product.getPrice());
