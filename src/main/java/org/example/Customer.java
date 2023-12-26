@@ -25,10 +25,10 @@ public class Customer {
 
     public static void displayByCat(ArrayList <Product> Products, String cat) {
        boolean flag = false;
-    ArrayList<Product> temp = new ArrayList<>();
+       ArrayList<Product> temp = new ArrayList<>();
 
     for (Product product : Products) {
-        if (Products.category.equals(cat)) {
+        if (product.category.equals(cat)) {
             temp.add(product);
             flag = true;
         }
