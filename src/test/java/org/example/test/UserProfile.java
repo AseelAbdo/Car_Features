@@ -62,7 +62,7 @@ else{
 
         string = customer.getUsername();
         string2="aseel2002";
-        customer.UpdateUsername(string2);
+        customer.updateUsername(string2);
         if(customer.getUsername().equals(string)){
             System.out.println("Username doesnt updated ");
 
@@ -77,7 +77,7 @@ else{
 
         string = customer.getPass();
         string2="54321";
-        customer.UpdatePassword(string2);
+        customer.updatePassword(string2);
         if(customer.getUsername().equals(string)){
             System.out.println("Password doesnt updated ");
 
