@@ -28,7 +28,7 @@ public class Customer {
     ArrayList<Product> temp = new ArrayList<>();
 
     for (Product product : Products) {
-        if (Products.getCategory().equals(cat)) {
+        if (Products.category.equals(cat)) {
             temp.add(product);
             flag = true;
         }
