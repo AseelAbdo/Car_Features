@@ -53,11 +53,11 @@ p.add(product2);
       order.updateOrder(customer2,p);
       if(order.getCustomer().equals(customer2) && order.getProducts().equals(p)){
           System.out.println("Order updated it successfully");
-          assertEquals(true,true);
+            assertTrue(true);
       }
       else{
           System.out.println("Order not updated");
-          assertEquals(true,true);
+            assertTrue(true);
       }
 
     }
