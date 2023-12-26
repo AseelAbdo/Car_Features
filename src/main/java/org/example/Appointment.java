@@ -4,7 +4,6 @@ import java.time.LocalDateTime;
 
 public class Appointment {
     private int appointmentId;
-    private Customer customer;
     private Installer installer;
     private Product product;
     private LocalDateTime scheduledTime;
