@@ -53,11 +53,11 @@ Customer customer = new Customer(1,"aseel","aseel@gmail.com","12345");
      if(customer.getEmail().equals(string)){
     System.out.println("Email doesnt updated ");
 
-    assertEquals(false,false);
+            assertFalse(false);
 }
 else{
     System.out.println("Email Updated Successfully from: "+"\t"+string+"\t"+"to"+"\t"+string2);
-    assertEquals(true,true);
+            assertTrue(true);
 }
 
         string = customer.getUsername();
@@ -66,11 +66,11 @@ else{
         if(customer.getUsername().equals(string)){
             System.out.println("Username doesnt updated ");
 
-            assertEquals(false,false);
+            assertFalse(false);
         }
         else{
             System.out.println("Username Updated Successfully from: "+"\t"+string+"\t"+"to"+"\t"+string2);
-            assertEquals(true,true);
+            assertTrue(true);
         }
 
 
@@ -81,11 +81,11 @@ else{
         if(customer.getUsername().equals(string)){
             System.out.println("Password doesnt updated ");
 
-            assertEquals(false,false);
+            assertFalse(false);
         }
         else{
             System.out.println("Password Updated Successfully from: "+"\t"+string+"\t"+"to"+"\t"+string2);
-            assertEquals(true,true);
+            assertTrue(true);
         }
 
 
