@@ -12,6 +12,7 @@ public Product p;
     private  String name;
 
     private  String password;
+    private static final Logger logger = Logger.getLogger(Admin.class.getName());
 
     private ArrayList <Product> product = new ArrayList<>();
     private ArrayList <Customer> customers = new ArrayList<>();
@@ -142,11 +143,11 @@ public   ArrayList getArray(){
         return flag;
     }
     public String displayAccount(Customer customer) {
-        Integer ID = customer.getID();
-        boolean flag = searchID(ID);
+        Integer customerID = customer.getID();
+        boolean flag = searchID(customerID);
         if(flag) {
-            String s = "Customer ID:" + " " + customer.getID() + "\n" + "Customer username:" + " " + customer.getUsername() + "\n" + "Customer email:" + " " + customer.getEmail();
-            return s;
+            return "Customer ID:" + " " + customer.getID() + "\n" + "Customer username:" + " " + customer.getUsername() + "\n" + "Customer email:" + " " + customer.getEmail();
+            
         }
         else {
             return "Customer doesnt exists";
@@ -173,7 +174,7 @@ public   ArrayList getArray(){
         }
 
         if (!flag) {
-            System.out.println("No category found");
+            logger.info("No category found");
         }
 
         return flag;
@@ -185,14 +186,14 @@ public   ArrayList getArray(){
                     product_old.setImage(newImage);
                 }
                 else {
-        System.out.println("Wrong type of image");
+        logger.info("Wrong type of image");
                 }
 
                 if (product_old.checkPrice(newPrice)) {
                     product_old.setPrice(newPrice);
                 }
                 else {
-                    System.out.println("Wrong type of price");
+                    logger.info("Wrong type of price");
 
                 }
 
@@ -201,13 +202,13 @@ public   ArrayList getArray(){
                     product_old.setAvailability(avail);
                 }
                 else {
-                    System.out.println("Wrong type of availability");
+                    logger.info("Wrong type of availability");
 
                 }
 
-             System.out.println("Product details updated by admin");
+             logger.info("Product details updated by admin");
             } else {
-                System.out.println("Product not found. Update failed.");
+                logger.info("Product not found. Update failed.");
             }
         }
 
@@ -226,12 +227,12 @@ public   ArrayList getArray(){
             if(appointment.getID() == appointmentID){
 
                 appointment.setIsCanceled(true);
-                System.out.println("Appointment is canceled");
+                logger.info("Appointment is canceled");
 
 
             }
             else{
-                System.out.println("Product doesn't exist.. cant cancel this appointement  ");
+                logger.info("Product doesn't exist.. cant cancel this appointement  ");
             }
 
         }
