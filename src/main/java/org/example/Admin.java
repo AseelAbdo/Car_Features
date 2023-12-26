@@ -14,10 +14,10 @@ public Product p;
     private  String password;
     private static final Logger logger = Logger.getLogger(Admin.class.getName());
 
-    private ArrayList <Product> product = new ArrayList<>();
+    private List <Product> product = new ArrayList<>();
     private ArrayList <Customer> customers = new ArrayList<>();
 
-    public ArrayList <String> category = new ArrayList<>();
+    public List <String> category = new ArrayList<>();
 
     public  Admin(Integer adminID, String name,String email,String pass){
         this.name=name;
@@ -26,7 +26,7 @@ public Product p;
         this.password=pass;
     }
 
-  public ArrayList getCatList(){
+  public ArrayList getCategory(){
         return category;
   }
 
@@ -34,7 +34,7 @@ public Product p;
 
 
 
-public   ArrayList getArray(){
+public   List getProduct(){
         return product;
 }
 
