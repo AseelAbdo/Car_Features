@@ -188,12 +188,12 @@ public class AdminDashboard {
 
         admin.scheduleAppointment(appointment, customer);
         if (customer.getApp().get(0).equals(appointment)) {
-            System.out.println(admin.get_username() + " " + "scheduled the appointment for customer " + " " + customer.getUsername());
+            System.out.println(admin.getUsername() + " " + "scheduled the appointment for customer " + " " + customer.getUsername());
             assertTrue(true);
 
         } else {
             assertFalse(false);
-            System.out.println(admin.get_username() + " " + " doesnt manage to schedule the appointment for customer " + " " + customer.getUsername());
+            System.out.println(admin.getUsername() + " " + " doesnt manage to schedule the appointment for customer " + " " + customer.getUsername());
         }
 
     }
