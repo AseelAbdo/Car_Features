@@ -18,8 +18,7 @@ public Product p;
 
     public ArrayList <String> category = new ArrayList<>();
 
-    public  Admin(Integer ID, String name,String email,String pass){
-
+    public  Admin(Integer adminID, String name,String email,String pass){
         this.name=name;
         this.adminID=ID;
         this.email=email;
@@ -44,46 +43,46 @@ public   ArrayList getArray(){
 
     }
 
-    public  void set_id(Integer id) {
+    public  void setID(Integer id) {
 
         this.adminID = id;
     }
 
 
 
-    public  void set_name(String name) {
+    public  void setName(String name) {
 
         this.name = name;
 
     }
 
-    public  void set_password(String password2) {
+    public  void setPassword(String password2) {
 
         password = password2;
 
     }
 
-    public  String get_username() {
+    public  String getUsername() {
 
         return name;
     }
 
-    public  String get_email() {
+    public  String getEmail() {
 
         return email;
     }
-    public  Integer get_ID() {
+    public  Integer getID() {
 
         return adminID;
     }
 
 
-    public ArrayList get_productList() {
+    public ArrayList getProductList() {
 
         return product;
     }
 
-    public  String get_password() {
+    public  String getPassword() {
 
         return password;
     }
