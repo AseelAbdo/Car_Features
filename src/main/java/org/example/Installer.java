@@ -1,5 +1,5 @@
 package org.example;
-
+import java.util.logging.Logger;
 import javax.mail.*;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
@@ -8,6 +8,7 @@ import java.util.Properties;
 
 public class Installer {
     private String email;
+    private static final Logger logger = Logger.getLogger(Installer.class.getName());
 
     public void setEmail(String email) {
         this.email = email;
@@ -48,7 +49,7 @@ public class Installer {
 
             // Send message
             Transport.send(message);
-            System.out.println("Sent message successfully....");
+            logger.info("Sent message successfully....");
         } catch (MessagingException m) {
             m.printStackTrace();
         }
