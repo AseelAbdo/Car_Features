@@ -24,15 +24,15 @@ public class Customer {
     }
 
     public static void displayByCat(ArrayList <Product> Products, String cat) {
-        boolean flag = false;
-        ArrayList<Product> temp = new ArrayList<>();
-        for (Product product : Products) {
-            if (Products.getCategory().equals(cat)) {
-                temp.add(product);
-                flag = true;
-            }
+       boolean flag = false;
+    ArrayList<Product> temp = new ArrayList<>();
 
+    for (Product product : products) {
+        if (product.getCategory().equals(cat)) {
+            temp.add(product);
+            flag = true;
         }
+    }
 
         if (!flag) {
             logger.info("No products found in the category: " + cat);
