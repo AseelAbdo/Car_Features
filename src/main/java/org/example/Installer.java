@@ -51,7 +51,6 @@ public class Installer {
             Transport.send(message);
             logger.info("Sent message successfully....");
         } catch (MessagingException m) {
-            m.printStackTrace();
         }
     }
 
