@@ -120,8 +120,8 @@ public   ArrayList getArray(){
 
     public boolean searchProduct(String name) {
         boolean flag = false;
-        for(Product product1 : product){
-            if(product1.getName().equals(name))
+        for(Product productName : product){
+            if(productName.getName().equals(name))
                 flag = true;
 
         }
@@ -134,8 +134,8 @@ public   ArrayList getArray(){
 
     public  boolean searchID(Integer customer_ID){
         boolean flag =false;
-        for(Customer customer:customers){
-            if(customer.getID() == customer_ID){
+        for(Customer customerName:customers){
+            if(customerName.getID() == customer_ID){
                 flag =true;
             }
         }
