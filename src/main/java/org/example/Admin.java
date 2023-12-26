@@ -7,7 +7,7 @@ import java.util.logging.Logger;
 public class Admin {
 public Product p;
     private  String email;
-    private  Integer ID;
+    private  Integer adminID;
 
     private  String name;
 
@@ -21,7 +21,7 @@ public Product p;
     public  Admin(Integer ID, String name,String email,String pass){
 
         this.name=name;
-        this.ID=ID;
+        this.adminID=ID;
         this.email=email;
         this.password=pass;
     }
@@ -46,7 +46,7 @@ public   ArrayList getArray(){
 
     public  void set_id(Integer id) {
 
-        this.ID = id;
+        this.adminID = id;
     }
 
 
@@ -74,7 +74,7 @@ public   ArrayList getArray(){
     }
     public  Integer get_ID() {
 
-        return ID;
+        return adminID;
     }
 
 
@@ -109,7 +109,6 @@ public   ArrayList getArray(){
 
 
     public void updateCat( String oldCategory ,String newCategory) {
-       // String currentCategory = product.getCategory();
 
         for (int i = 0; i < category.size(); i++) {
             if (category.get(i).equals(oldCategory)) {
