@@ -69,7 +69,6 @@ public void sendMessage(String status,String email){
         System.out.println("Sent message successfully....");
     }
     catch (MessagingException m){
-        m.printStackTrace();
     }
 
 }
