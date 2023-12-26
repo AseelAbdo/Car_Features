@@ -2,11 +2,10 @@ package org.example;
 
 import java.util.ArrayList;
 import java.util.Iterator;
-import java.util.Scanner;
 import java.util.logging.Logger;
 
 public class Admin {
-public Product p;
+ public static final Product P = new Product()
     private  String email;
     private  Integer ID;
 
@@ -17,7 +16,7 @@ public Product p;
     private ArrayList <Product> product = new ArrayList<>();
     private ArrayList <Customer> customers = new ArrayList<>();
 
-    public ArrayList <String> category = new ArrayList<>();
+    public List <String> category = new List<>();
 
     public  Admin(Integer ID, String name,String email,String pass){
         this.name=name;
@@ -26,13 +25,16 @@ public Product p;
         this.password=pass;
     }
 
-  public ArrayList getCatList(){
+  public List getCatList(){
         return category;
   }
 
 
 
-
+ // Add accessors if needed
+    public static Product getP() {
+        return P;
+    }
 
 public   ArrayList getArray(){
         return product;
