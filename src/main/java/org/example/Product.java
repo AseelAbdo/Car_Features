@@ -54,9 +54,7 @@ public class Product {
         this.IsConfirmed = true;
     }
 
-    public void findBName(String string) {
 
-    }
 
     public Product() {
 
