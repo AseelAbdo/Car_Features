@@ -5,7 +5,7 @@ import java.util.Iterator;
 import java.util.logging.Logger;
 
 public class Admin {
- public static final Product P = new Product()
+ public static final Product P = new Product();
     private  String email;
     private  Integer ID;
 
