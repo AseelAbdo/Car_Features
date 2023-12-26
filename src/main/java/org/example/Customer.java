@@ -8,7 +8,8 @@ public class Customer {
 
     private boolean accountActive = false;
     private String username;
-
+    private static final Logger logger = Logger.getLogger(Customer.class.getName());
+.
 
     private String email;
     private String password;
@@ -37,21 +38,21 @@ public class Customer {
         }
 
         if (!flag) {
-            System.out.println("No products found in the category: " + cat);
+            logger.info("No products found in the category: " + cat);
         } else {
             System.out.println("Products in the category " + cat + ":");
             for (Product product : temp) {
-                System.out.println("Product Name: " + product.getName());
-                System.out.println("Product Price: " + product.getPrice());
-                System.out.println("Product Description: " + product.getProduct_Description());
-                System.out.println("Product Image: " + product.getImages());
+                logger.info("Product Name: " + product.getName());
+                logger.info("Product Price: " + product.getPrice());
+                logger.info("Product Description: " + product.getProduct_Description());
+                logger.info("Product Image: " + product.getImages());
             }
 
         }
     }
 
 
-    public void UpdateEmail(String string2) {
+    public void updatEmail(String string2) {
         this.email = string2;
 
     }
@@ -62,8 +63,8 @@ public class Customer {
     }
 
 
-    public void setEmail(String E) {
-        this.email = E;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public static String getNotificationRecipient() {
@@ -90,18 +91,18 @@ public class Customer {
 
         for (Product product : products2) {
             if (product.getPrice() >= int1 && product.getPrice() <= int2) {
-                System.out.println("Product Name: " + product.getName());
-                System.out.println("Price: $" + product.getPrice());
-                System.out.println("Availability: " + product.getAvailability());
-                System.out.println("Category: " + product.getCategory());
-                System.out.println("Images:");
-                System.out.println("\t" + product.getImages());
+                logger.info("Product Name: " + product.getName());
+                logger.info("Price: $" + product.getPrice());
+                logger.info("Availability: " + product.getAvailability());
+                logger.info("Category: " + product.getCategory());
+                logger.info("Images:");
+                logger.info("\t" + product.getImages());
             }
-            System.out.println("-------------------------------");
+            logger.info("-------------------------------");
         }
     }
 
-    public void UpdateUsername(String string2) {
+    public void updateUsername(String string2) {
         this.username = string2;
     }
 
@@ -113,7 +114,7 @@ public class Customer {
     }
 
 
-    public void UpdatePassword(String string2) {
+    public void updatePassword(String string2) {
         this.password = string2;
     }
 
