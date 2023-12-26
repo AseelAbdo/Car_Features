@@ -1,5 +1,4 @@
 package org.example;
-import java.util.List;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.logging.Logger;
@@ -78,10 +77,7 @@ public   ArrayList getProduct(){
     }
 
 
-    public ArrayList getProductList() {
-
-        return product;
-    }
+    
 
     public  String getPassword() {
 
