@@ -136,7 +136,7 @@ public   ArrayList getArray(){
     public  boolean searchID(Integer customerID){
         boolean flag =false;
         for(Customer customerName:customers){
-            if(customerName.getID() == customer_ID){
+            if(customerName.getID() == customerID){
                 flag =true;
             }
         }
