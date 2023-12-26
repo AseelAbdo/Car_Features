@@ -1,5 +1,5 @@
 package org.example;
-
+import java.util.List;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.logging.Logger;
@@ -34,7 +34,7 @@ public Product p;
 
 
 
-public   List getProduct(){
+public   List<Product> getProduct(){
         return product;
 }
 
