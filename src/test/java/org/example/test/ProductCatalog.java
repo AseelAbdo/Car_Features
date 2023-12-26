@@ -62,12 +62,12 @@ public class ProductCatalog {
     }
 
     if(flag){
-        assertEquals(true,true);
+            assertTrue(true);
         System.out.println("Admin fills successfully");
 
     }
     else{
-        assertEquals(false,false);
+            assertFalse(false);
     }
 
 
@@ -85,10 +85,10 @@ public class ProductCatalog {
        if(product1.checkAvail(Integer.parseInt(string2))){
            flag = true;
            System.out.println("Admin added availability successfully:"+"\t"+ string2);
-           assertEquals(true,true);
+            assertTrue(true);
        }
        else{
-           assertEquals(false,false);
+            assertFalse(false);
        }
       }
 
@@ -100,7 +100,7 @@ public class ProductCatalog {
 
         }
         else {
-            assertEquals(false,false);
+            assertFalse(false);
         }
 
       }
@@ -125,12 +125,12 @@ public class ProductCatalog {
 
       if(flag){
           System.out.println("The extension"+string2+"\t"+"is correct");
-          assertEquals(true,true);
+            assertTrue(true);
       }
 
       else{
           System.out.println("The extension"+string2+"is wrong");
-          assertEquals(false,false);
+            assertFalse(false);
       }
     }
 
@@ -142,11 +142,11 @@ public class ProductCatalog {
 
         if(flag){
             System.out.println("The Product confirmed ");
-            assertEquals(true,true);
+            assertTrue(true);
         }
         else {
             System.out.println("The product hasn't been confirmed .. error occurred");
-            assertEquals(false, false);
+            assertFalse(false);
         }
 
 
